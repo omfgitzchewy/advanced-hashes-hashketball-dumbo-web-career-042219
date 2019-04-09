@@ -208,5 +208,18 @@ end
 
 def big_shoe_rebounds
   max_player = nil
-  max_player = "Brooks"
+  max_size = 0
+  game_hash.each do |location, team_data|
+    team_data.each do |t_key, t_val|
+      if t_key == :players
+        t_val.each do |player_name, player_stats|
+              player_stats.each do |type, number|
+                if :shoe.value > max_size
+                  max_size = player_name
+                end
+              end
+        end
+      end
+    end
+  end
 end
