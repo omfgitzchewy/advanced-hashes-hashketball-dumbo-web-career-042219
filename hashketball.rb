@@ -222,4 +222,5 @@ def big_shoe_rebounds
       end
     end
   end
+  return max_player
 end
