@@ -207,5 +207,6 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  
+  max_player = nil
+  max_player = "Brooks"
 end
