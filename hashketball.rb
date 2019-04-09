@@ -214,7 +214,7 @@ def big_shoe_rebounds
       if t_key == :players
         t_val.each do |player_name, player_stats|
               player_stats.each do |type, number|
-                if :shoe.values > max_size
+                if type == :shoe && game_hash[location][:players][player_name][type] > max_size
                   max_size = player_name
                 end
               end
